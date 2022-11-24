@@ -1,0 +1,732 @@
+
+.hide{ display: none;}
+
+#metier-eau-dechet{ display: none;}
+#gestion-reseau-distribution{ display: none;}
+
+#metier-eau-dechet-d{ display: none;}
+#gestion-reseau-distribution-d{ display: none;}
+
+#metier-eau-dechet-t{ display: none;}
+#gestion-reseau-distribution-t{ display: none;}
+
+#metier-eau-dechet-v{ display: none;}
+#gestion-reseau-distribution-v{ display: none;}
+
+#metier-eau-dechet-x{ display: none;}
+#gestion-reseau-distribution-x{ display: none;}
+
+
+#radeej-t{ display: none;}
+#veolia-t{ display: none;}
+
+.enjeux-secteur{
+    /*height: 400px;*/
+    max-width: 1069px;
+    margin: auto;
+    padding: 5em 0em 2em 0em;
+    text-align: center;
+}
+
+.line-shape{
+    height: 73px;
+    background-image: url(../../images/enjeux-secteur-path.png);
+    background-size: 842px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.enjeux-secteur h4 {
+    margin: 0em 0em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.enjeux-secteur h3 {
+    margin: 0em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.enjeux-secteur p {
+    color: #3f3f3f;
+}
+
+.enjeux-secteur ul{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.enjeux-secteur ul li{
+    display: inline-block;
+    width: 334px;
+    height: 93px;
+}
+
+.enjeux-secteur ul li a{
+    
+    font-size: 1.1em;
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    padding: 1.5em 3em;
+    /* vertical-align: middle; */
+    color: #494949;
+    background: #e6e6e6;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enjeux-secteur ul li a span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.enjeux-secteur ul li a:hover {
+     font-weight: bold;
+     background: #fbb243;
+     color: #fff;
+     transition: 0.3s;
+}
+
+.enjeux-secteur ul li .active{
+    font-weight: bold;
+     background: #fbb243;
+     color: #fff;
+}
+
+.enjeux-secteur ul li a:hover span {
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.8s; /* don't forget to set a duration! */
+}
+
+.enjeux-secteur-details{
+    /*height: 446px;*/
+    max-width: 1069px;
+    margin: auto;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.enjeux-secteur-details .bloc-image{
+    width: 35%;
+    height: 100%;
+}
+
+.enjeux-secteur-details .bloc-image img{
+    width: 100%;
+}
+.enjeux-secteur-details .bloc-description{
+    width: 65%;
+    padding: 5em;
+    text-align: left;
+}
+
+.enjeux-secteur-details .bloc-description h3{
+    color: #3d3a8a;
+    font-size: 2.5em;
+    margin: 0px;
+}
+
+.enjeux-secteur-details .bloc-description p{
+    line-height: 156%;
+    font-size: 1.1em;
+}
+
+.defis-bg{
+    background: #f9f9f9;
+
+}
+.defis{
+    /* margin: auto; */
+    padding: 0em;
+    text-align: center;
+    background-image: url(../../images/defis_arriereplan.png);
+    background-size: 799px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+}
+
+
+.defis-content{
+    max-width: 1167px;
+    padding: 3em 3em 0.1em;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.defis-content h4 {
+    margin: 0em 0em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.defis-title{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 3em 8em;
+    background: #f9f9f9;
+}
+
+
+.defis-content h3 {
+    margin: 0em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+
+.defis-content ul{
+    display: flex;
+    padding: 0em;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.6em 0em;
+}
+.defis-content ul li{
+    display: inline-block;
+    width: 48%;
+    margin: 0em 0em 2em;
+}
+.defis-content ul li a{
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    padding: 0.5em 2em;
+    color: #494949;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    cursor: default;
+}
+
+.defis-content ul li a .icone{
+    display: block;
+    background: #fff;
+    padding: 1.2em;
+    border-radius: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.defis-content ul li a .icone svg {
+    width: 35px;
+    height: 31px;
+}
+
+
+.defis-content ul li a .icone g path {
+    fill: #3d3a8a;
+}
+/*
+.defis-content ul li a:hover .icone g path {
+    fill: #fff;
+}
+*/
+
+.defis-content ul li a .description{
+    padding: 0em 1em;
+}
+.defis-content ul li a .description h5{
+    margin: 1em 0em 1em 0.8em;
+    color: #3d3a8a;
+    font-size: 1.1em;
+}
+
+.defis-content ul li a .description p{
+    font-size: 0.8em;
+    margin-left: 1.1em;
+}
+
+
+/*
+.defis-content ul li a:hover {
+     background: #fff;
+     transition: 0.4s;
+}
+
+.defis-content ul li a:hover .icone{
+    background: orange;
+}
+*/
+.enjeux-valeur{
+    margin: auto;
+    padding: 3em 4em 0em;
+    text-align: center;
+}
+
+.enjeux-valeur h4 {
+    margin: 0em 0em;
+    color: #413e8c;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.enjeux-valeur h3 {
+    margin: 0em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+/*
+
+<div class="nos-valeurs">
+                <div class="valeur-left"></div>
+                <div class="valeur-right"></div>
+*/
+.nos-valeurs{
+    padding: 2em 0em;
+    margin: auto;
+    max-width: 1076px;
+
+}
+
+
+.valeur-subbloc{
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0em 3.5em;
+}
+
+.valeur-subbloc-description{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    padding: 0em 2em 0em 0em;
+
+}
+.valeur-subbloc-img{
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.valeur-subbloc-img img {
+    border-style: none;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.valeur-subbloc-description ul {
+    margin: 2em 0em;
+    padding: 0px 26px;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.valeur-subbloc-description li {
+    margin: 1em 0em;
+}
+.valeur-subbloc-description li::marker {
+    color: #edb940;
+    list-style-type: circle;
+    font-size: 30px;
+}
+
+.valeur-subbloc-description ul li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 198%;
+    font-size: 0.95em;
+} 
+.valeur-subbloc-description li a:hover{
+    font-weight: bold;
+}
+
+.valeur-subbloc:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.valeur-subbloc:last-child{
+    margin: 1em 0em 0em;
+}
+
+.valeur-subbloc:nth-child(even) .valeur-subbloc-description { padding: 0em 2em 0em 3em; }
+
+.enjeux-testimonial {
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    /*height: 884px;*/
+    padding: 4em 0em 0em;
+}
+
+.bloc-testimonial {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: #fbb03b;
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1069px;
+}
+.testimonial-resume{
+    width: 50%;
+    height: 100%;
+    padding: 2em 4em 0em 3em;
+    
+}
+
+
+.testimonial-resume ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    width: 220px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial-resume ul li{
+    margin: 2px;
+}
+.testimonial-resume ul li a{
+    display: flex;
+    border-radius: 10px;
+    border: 3px solid #0000;
+    height: 69px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+}
+
+.testimonial-resume ul li a:focus {
+    outline: none;
+  }
+.testimonial-resume ul li a img{
+    width: 90%;
+    max-height: 48px;
+}
+
+.testimonial-resume ul li a img:focus {
+    outline: none;
+  }
+
+
+.testimonial-resume ul li a:hover{
+    border: 3px solid #0003;
+    transition: 0.3s;
+}
+
+.testimonial-resume ul li .active{
+    border: 3px solid #0003;
+    transition: 0.3s;
+}
+
+
+.testimonial-resume h4 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.testimonial-resume h3 {
+    margin: 0.3em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    /* padding: 4px; */
+    font-weight: bold;
+    
+}
+
+.testimonial-resume p {
+    color: #fff;
+    line-height: 200%;
+    /*padding: 0.9em 0.5em;*/
+    height: 396px;
+    overflow: auto;
+}
+
+.testimonial-biographie{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    
+}
+.testimonial-biographie img{
+    width: 100%;
+    background: #fff;
+    border-top-right-radius: 11px;
+
+}
+.testimonial-biographie .presentation{
+    background: #f9f9f9;
+    height: 50%;
+    padding: 1em 2.5em;
+}
+
+
+.testimonial-biographie .presentation h4 {
+    margin: 0em 0em;
+    color: #47419b;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.testimonial-biographie .presentation h3 {
+    margin: 0.4em -0.1em;
+    color: #fbb03b;
+    font-size: 2.1em;
+    font-weight: bold;
+    /* padding: 4px; */
+    font-weight: bold;
+}
+
+.testimonial-biographie .presentation p {
+    color: #0b0b0b;
+    line-height: 200%;
+}
+
+
+.enjeux-video {
+    text-align: center;
+    background-image: url(../../images/bg-satisfaction.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding: 1em 2em 0em;
+    background-color: #fafafa;
+}
+
+.enjeux-video iframe{
+    margin: 2em;
+    width: 850px;
+    height: 483px;
+    border-radius: 11px;
+}
+
+.enjeux-video h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.enjeux-video h3 {
+    margin: 0em 0em;
+    color: #000;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px
+}
+.enjeux-video .diagram {
+    padding: 3em;
+}
+
+.circle{
+    display: block;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 54px;
+    left: 44%;
+    z-index: -1;
+}
+
+@keyframes scaleChat {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.send-msg{
+    display: flex;
+    width: 75px;
+    height: 75px;
+    background-image: linear-gradient(to bottom, #ffaf06 0%, #ff8c24 100%);
+    border-radius: 54px;
+    z-index: 2;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-msg:hover{
+        
+    animation: scaleChat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.3s; /* don't forget to set a duration! */
+    transform: scale(1.1);
+}
+
+.send-msg img{
+    height: 28px;
+    margin-top: 4px;
+    margin-right: 3px;
+}
+
+.sticky-enjeux-menu{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    height: auto;
+
+    justify-content: center !important;
+    width: 100% !important;
+    left: 0 !important;
+    background: #f9f9f9 !important;
+    
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    
+}
+.sticky-enjeux-menu li {
+    display: inline-block;
+    width: 371px !important;
+    height: 64px !important;
+}
+
+.sticky-enjeux-menu li a {
+    font-size: 1em;
+    padding: 1em  !important;
+    color: #494949;
+    border-radius: 0!important;
+}
+
+
+
+ul.details {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: 396px;
+    align-items: flex-start;
+}
+
+ul.details li {
+    padding: 0.3em 0;
+
+} 
+
+ul.details li::marker {
+    color: #fff;
+    list-style-type: circle;
+    font-size: 20px;
+}
+
+ul.details li p{
+    height: auto;
+    margin: 0;
+} 
+
+@media only screen and (max-width: 900px)  {
+
+    .line-shape{ display: none;}
+    .defis-content ul{ flex-direction: column; }
+    .defis-content ul li{ width: auto;}
+
+    .valeur-subbloc{ flex-direction: column; }
+
+    .valeur-subblocx:nth-child(even) { flex-direction: column-reverse; }
+    .valeur-subbloc-img{ width: auto; }
+    .valeur-subbloc-description{ width: auto; padding: 1em 0em; }
+
+    .enjeux-video iframe { margin: 2em 0; width: 100%; }
+
+    .enjeux-secteur-details{ flex-direction: column; }
+    .enjeux-secteur-details .bloc-image{ width: auto; }
+        
+    .enjeux-secteur-details .bloc-description{ width: auto; padding: 1em;}
+
+
+    .enjeux-testimonial{ padding: 0;}
+    .bloc-testimonial {flex-direction: column-reverse; border-radius: 0px;}
+    .testimonial-biographie {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-biographie img {
+        border-top-right-radius: 0px;
+    }
+    .testimonial-resume {
+        width: 100%;
+        height: auto;
+        padding: 2em;
+    }
+
+    .enjeux-secteur ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .enjeux-secteur ul li{
+        width: 100%;
+    }
+    .enjeux-secteur ul li a{ border-radius: 0;}
+    .defis-content { padding: 3em 2em;}
+    .defis-content ul li a {
+        padding: 0.5em 0em;
+    }
+    .valeur-subbloc:nth-child(even){
+        flex-direction: column;
+    }
+    .valeur-subbloc:nth-child(even) .valeur-subbloc-description {
+        padding: 0em 2em 0em 0em;
+    }
+
+    .enjeux-valeur {  padding: 2em 2em 0em; }
+    .valeur-subbloc-description li {
+        margin: 0em 0em;
+    }
+    .enjeux-valeur h3 { font-size: 1.5em; }
+
+    .sticky-enjeux-menu li {
+        width: 100% !important;
+    }
+
+    ul.details {
+        height: auto;
+    }
+}

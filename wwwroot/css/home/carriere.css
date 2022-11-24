@@ -1,0 +1,149 @@
+
+.carriere {
+    /* background-image: url(../images/carriere.jpg); */
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 3em 2em 0em;
+    height: 528px;
+}
+
+.carriere-offres-image{
+    max-width: 1069px;
+    height: 100%;
+    background: #757ce6;
+    border-radius: 14px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carriere-offres-image .bloc-offres{
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+}
+
+.carriere-offres-image .bloc-image{
+    width: 50%;
+    height: 100%;
+}
+
+.carriere-offres-image .bloc-image img {
+    width: auto;
+    height: 480px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.carriere-offres-image h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #42347f    ;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.carriere-offres-image h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 4px
+}
+
+.carriere-offres-image ul{ 
+    display: block;
+    padding: 1em 0px 81px 23px;
+    list-style-image: url(../../images/carriere-puce.svg);
+}
+.carriere-offres-image ul li::marker{
+    display: block;
+
+/*
+    background-image: url(../images/carriere.jpg);
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;*/
+}
+.carriere-offres-image ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 200%;
+    background-image: url(../../images/group-link.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: bottom;
+    padding: 0.2em;
+    background-position-y: center;
+}
+.carriere-offres-image ul li a:hover{
+    color: #42347f;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.carriere-offres-image .read-more .button {
+    background-color: white;
+    color: #42347f;
+    padding: 0.9em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 5px;
+    border: 2px solid white;
+
+}
+.carriere-offres-image .read-more .button:hover {
+    background-color: transparent;
+   border: 2px solid white;
+   color: white;
+   transition: 0.3s;
+}
+
+.carriere-offres-image .read-more .link {
+    color: white;
+    font-size: 0.8em;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.carriere-offres-image .read-more .link:hover {
+    font-size: 0.8em;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1100px) {
+    .carriere {
+        padding: 0em;
+        height: auto;
+    }
+    .carriere-offres-image {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-radius: 0px;
+    }
+    .carriere-offres-image .bloc-image {
+         width: auto;
+        height: auto;
+    }
+
+    .carriere-offres-image .bloc-image img {
+        width: 100%;
+        height: auto;
+   }
+
+   .carriere-offres-image .bloc-offres {
+        width: 100%;
+    }
+}

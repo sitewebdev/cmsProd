@@ -1,0 +1,362 @@
+
+.qui-sommes-nous {
+    height: 614px;
+}
+
+.qui-sommes-nous-background-photo {
+    height: 415px;
+    background: url('../../images/img_about.jpg');
+    background-size: 1300px;
+}
+
+.qui-sommes-nous-bloc-description {
+    height: auto;
+    width: 65%;
+    float: right;
+    background-color: #3d348b;
+    position: relative;
+    right: -15px;
+    top: 205px;
+    border-radius: 11px;
+
+    background-image: url(../../images/multicon.png);
+    background-repeat: no-repeat;
+    background-size: 495px;
+    background-position-x: right;
+    padding: 3em;
+}
+
+.qui-sommes-nous-bloc-description h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #ffab09;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.qui-sommes-nous-bloc-description h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 4px
+}
+
+.qui-sommes-nous-bloc-description p {
+    padding: 0px;
+    line-height: 126%;
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+    font-size: 1em;
+    margin: 0px 0px 25px;
+}
+
+.qui-sommes-nous-bloc-description h4.valeur {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #9f9afc;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+.valeur-bloc-vignette {
+    padding: 1em 0em 0em;
+}
+
+.valeur-list-vignette {
+    max-width: 950px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.valeur-vignette {
+    background-color: white;
+    color: #3d348b;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 30%;
+    margin: 5px;
+    border: 1px solid #fff;
+    cursor: default;
+}
+/*
+.valeur-vignette:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    transition: 0.3s;
+}*/
+
+.valeur-vignette img{
+    height: 15px;
+    margin-right: 8px;
+    float: left;
+}
+
+.qui-sommes-nous-bloc-description .read-more {
+    padding: 2em 0em 0em;
+}
+.qui-sommes-nous-bloc-description .read-more .button {
+    background-color: #ffab09;
+    color: white;
+    padding: 0.9em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.qui-sommes-nous-bloc-description .read-more .button:hover {
+    color: #ffab09;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+.ceo {
+    background-color: #ffab09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 420px;
+}
+
+.ceo .photo {
+    width: 30%;
+    height: 100%;
+    background: url(../../images/team/dg.png);
+    background-size: 372px;
+    background-repeat: no-repeat;
+}
+
+.ceo .description {
+    width: 70%;
+    padding: 3em;
+}
+
+.ceo .description h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #2b2778;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ceo .description h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.ceo .description p {
+    line-height: 155%;
+    /*width: 570px;*/
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.hands-groups{
+    height: 320px;
+    background-image: url(../../images/bande-separation.png);
+    background-size: 1600px;
+    background-position-x: center;
+}
+
+.specialite{
+    padding: 1em 0em 0em;
+    text-align: center;
+    background-image: url(../../images/heolienne-bg-2.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.specialite-grid{
+    margin: auto;
+}
+
+.specialite-grid .card{
+    width: 425px;
+    height: 300px;
+    border: 1px solid #eee;
+    margin: 1em 0;
+    border-radius: 1em;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5em;
+    justify-content: flex-end;
+    cursor: default!important;
+}
+
+.specialite-grid .margin-left { margin-left: 10px!important;}
+.specialite-grid .mini-card {
+    width: 190px;
+    min-height: 170px;
+    border: 1px solid #eee;
+    margin: 1em 0;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+}
+
+.specialite-grid .card-h4 {
+    color: #fff;
+    font-size: 2em;
+    text-transform: none;
+}
+.specialite-grid .card-p {
+    color: #fff;
+    font-size: 1em;
+    margin: 0.5em 0em;
+}
+
+.specialite h4 {
+    margin: 0em 0em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.specialite h3 {
+    margin: 0em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.specialite p {
+    color: #3f3f3f;
+}
+
+
+.c-bg-orange{background-color: #ff8c24;}
+.c-bg-blue-light{background-color: #757ce6;}
+.c-bg-blue-night{background-color: #3d348b;}
+
+.gallery-padding{
+    padding: 1em;
+} 
+
+.gallery-button {
+    width: 100%;
+    min-height: 170px;
+    border: 1px solid #eee;
+    margin: 1em 0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.gallery-button:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.fly-card{}
+
+.fly-card:hover .fly-description {
+    opacity: 1;
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.fly-description {
+    position: relative;
+    top: 0;
+    height: 50px;
+    margin-top: -64px;
+    background: linear-gradient(0deg, #ff8c24e3 40%, #00000000 97%);
+    transition: 0.3s;
+    padding: 2em 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity: 0;
+    justify-content: space-between;
+}
+.fly-description h4{
+    font-size: 1.35em!important;
+    color: #fff!important;
+    text-align: left;
+}
+.fly-description p{
+    margin: 0;
+    color: #fff!important;
+}
+.fly-description .sc-nw{}
+.fly-description .sc-nw{}
+
+/* Responsive*/
+@media only screen and (max-width: 1100px) {
+    .qui-sommes-nous-bloc-description {
+        width: 100%;
+        right: 0px;
+        border-radius: 0px;
+    }
+
+    .valeur-list-vignette {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        align-items: flex-start;
+    }
+    .valeur-vignette {
+
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .specialite { padding: 1em; }
+    .ceo{ flex-direction: column; height: auto; }
+    .ceo .description {
+        width: 100%;
+        height: auto;
+        padding: 2em;
+    }
+    .ceo .description p { width: auto;}
+    .ceo .photo {
+        width: 100%;
+        height: 475px;
+        background-size: 460px;
+    }
+
+    .specialite-grid .card { width: 100%;}
+    .specialite-grid .mini-card { width: 100%;}
+
+    .qui-sommes-nous {
+        height: 758px;
+    }
+    
+}

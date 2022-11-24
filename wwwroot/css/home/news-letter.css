@@ -1,0 +1,125 @@
+.news-letter {
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 3em;
+
+}
+
+.bloc-news-letter-main{
+    border-radius: 12px;
+    margin: 0px auto;
+    max-width: 1069px;
+    height: 148px;
+    background: linear-gradient(98deg, #3d348b 1%, #757ce6 100%);
+}
+.bloc-news-letter{
+    margin: 0px auto;
+    max-width: 1069px;
+    height: auto;
+    padding: 2.6em;
+    background: url('../../images//Mask_group.png') no-repeat;
+    background-size: 167px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloc-news-letter h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.bloc-news-letter p {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 0 0.7em;
+}
+
+
+.bloc-news-left{}
+
+.bloc-news-right{
+    margin: 1.5em 0;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: flex-end;
+}
+
+.bloc-news-right input{
+    padding: 0.7em;
+    border-radius: 5px;
+    border: none;
+    color:#3d348b ;
+    border:2px solid #fff ;
+    margin: 0.2em;
+    width: 70%;
+
+}
+.bloc-news-right input:hover{
+    border:2px solid #fff ;
+}
+
+.bloc-news-right input:focus{
+    border:2px solid #fff ;
+}
+
+.bloc-news-right  button {
+    background-color: #ffab09;
+    color: white;
+    padding: 0.9em 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 3.9px solid #ffab09;
+    display: flex;
+}
+
+
+.bloc-news-right  button:hover {
+    /*background-color: #fff;
+    color: #ffab09;
+    border: 1.9px solid #ffab09;*/
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.bloc-news-right  button img {
+    height: 15px;
+    margin-right: 6px;
+}
+
+
+/* Responsive*/
+@media only screen and (max-width: 1100px) {
+    .news-letter { height: auto; padding: 0em; }
+    .bloc-news-letter-main {height: auto; border-radius: 0;}
+    .bloc-news-letter {
+        flex-direction: column;
+    }
+    .bloc-news-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0 0.7em;
+    }
+    .bloc-news-right input {
+        width: 100%;
+        margin: 0.2em 0;
+    }
+
+    .bloc-news-right button {
+        width: 100%;
+        text-align: center;
+    }
+
+}

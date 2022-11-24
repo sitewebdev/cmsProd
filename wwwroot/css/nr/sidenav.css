@@ -1,0 +1,162 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background: #00000052;
+    display: flex;
+    flex-direction: row-reverse;
+    opacity: 0;
+}
+
+.sidenav-form{
+    box-shadow: -4px 4px 7px -5px rgba(0,0,0,0.75);
+    padding: 1em 0em;
+    background-color: #fff;
+    width: 500px;
+    transition: 0.5s;
+    
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    margin-left: 28px;
+    position: absolute;
+    top: 42px;
+    padding: 5px 11px 5px 8px;
+    font-size: 0.8em;
+    border-radius: 41px;
+    background: #595ab6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #595ab6;
+  }
+
+  .sidenav .closebtn:hover { background: #fff;  color: #595ab6;}
+  .sidenav .closebtn:hover .icon { background: #595ab6; color: #fff; }
+  .sidenav .closebtn .icon{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #595ab6;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-right: 0.3em;
+  }
+  .sidenav .closebtn .text{}
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.side-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1em;
+
+}
+
+.side-row h4 {
+  margin: 0em 0em;
+  color: #ffab09;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.side-row h3 {
+  margin: 0em 0em;
+  color: #3f3b8b;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.side-row p {
+  color: #3f3f3f;
+  line-height: 170%;
+}
+
+
+.sidenav-form .bloc-form-postuler {
+  background: #fff;
+  padding: 1em;
+}
+
+.sidenav-form .bloc-form-postuler .form-postuler {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em 0em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3f3b8b;
+}
+
+.sidenav-form .input input {
+  padding: 0.7em;
+  margin: 0.5em;
+  border: 1px solid #757ce6;
+  border-radius: 2px;
+}
+
+.sidenav-form .input input[type=file]{
+  border: 1px dashed #595ab6;
+  background-color: #fff;
+}
+
+.sidenav-form .input-area textarea{
+  padding: 0.7em;
+  margin: 0.5em;
+  border: 1px solid #757ce6;
+  border-radius: 2px;
+  width: 99%;
+  height: 125px;
+}
+
+.sidenav .input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0.2em;
+}
