@@ -1,19 +1,22 @@
 {
   "ContentTypeDefinitionRecords": [
     {
-      "Name": "Menu",
-      "DisplayName": "Menu",
+      "Name": "logoSiteWeb",
+      "DisplayName": "logoSiteWeb",
       "Settings": {
         "ContentTypeSettings": {
+          "Creatable": true,
           "Listable": true,
           "Draftable": true,
-          "Versionable": true
-        }
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
       },
       "ContentTypePartDefinitionRecords": [
         {
-          "PartName": "TitlePart",
-          "Name": "TitlePart",
+          "PartName": "logoSiteWeb",
+          "Name": "logoSiteWeb",
           "Settings": {
             "ContentTypePartSettings": {
               "Position": "0"
@@ -24,17 +27,92 @@
           "PartName": "AliasPart",
           "Name": "AliasPart",
           "Settings": {
-            "AliasPartSettings": {
-              "Pattern": "{{ ContentItem | display_text | slugify }}"
-            },
             "ContentTypePartSettings": {
               "Position": "1"
             }
           }
         },
         {
-          "PartName": "MenuPart",
-          "Name": "MenuPart",
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MenuButton",
+      "DisplayName": "Menu Button",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "MenuButton",
+          "Name": "MenuButton",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Header",
+      "DisplayName": "Header",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "Header",
+          "Name": "Header",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            },
+            "AliasPartSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "Logo",
+          "Name": "Logo",
           "Settings": {
             "ContentTypePartSettings": {
               "Position": "2"
@@ -42,96 +120,284 @@
           }
         },
         {
-          "PartName": "MenuItemsListPart",
-          "Name": "MenuItemsListPart",
-          "Settings": {}
+          "PartName": "BagPart",
+          "Name": "Icons",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Icons",
+              "Description": "les icones des réseaux sociaux  ",
+              "Position": "4"
+            },
+            "BagPartSettings": {
+              "ContainedContentTypes": [
+                "LinkSocial"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "BagPart",
+          "Name": "Liens",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Liens",
+              "Description": "Liens vers les pages",
+              "Position": "3"
+            },
+            "BagPartSettings": {
+              "ContainedContentTypes": [
+                "Link"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "CustomLink",
+          "Name": "Button",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Button",
+              "Description": "Contenu du button",
+              "Position": "5"
+            }
+          }
         }
       ]
     },
     {
-      "Name": "LinkMenuItem",
-      "DisplayName": "Link Menu Item",
+      "Name": "LinkSocial",
+      "DisplayName": "Lien réseau social",
       "Settings": {
         "ContentTypeSettings": {
-          "Stereotype": "MenuItem"
-        }
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
       },
       "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "LinkSocial",
+          "Name": "LinkSocial",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": {
+            "ContentTypePartSettings": {},
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Link",
+      "DisplayName": "Link",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "Link",
+          "Name": "Link",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
         {
           "PartName": "LinkMenuItemPart",
           "Name": "LinkMenuItemPart",
           "Settings": {
             "ContentTypePartSettings": {
+              "DisplayName": "LinkMenuItem",
+              "Description": "Provides a menu link behavior for your content item.",
+              "Position": "1"
+            },
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "footer",
+      "DisplayName": "footer",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "footer",
+          "Name": "footer",
+          "Settings": {
+            "ContentTypePartSettings": {
               "Position": "0"
             }
           }
         },
         {
-          "PartName": "LinkMenuItem",
-          "Name": "LinkMenuItem",
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
           "Settings": {
             "ContentTypePartSettings": {
               "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "Logo",
+          "Name": "Logo",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "BagPart",
+          "Name": "Icons",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Icons",
+              "Description": "Provides a collection behavior for your content item where you can place other content items.",
+              "Position": "3"
+            },
+            "BagPartSettings": {
+              "ContainedContentTypes": [
+                "LinkSocial"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "BagPart",
+          "Name": "Navigation",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Les liens",
+              "Description": "Provides a collection behavior for your content item where you can place other content items.",
+              "Position": "4"
+            },
+            "BagPartSettings": {
+              "ContainedContentTypes": [
+                "Link"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "BagPart",
+          "Name": "sites",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Les sites",
+              "Description": "Provides a collection behavior for your content item where you can place other content items.",
+              "Position": "5"
+            },
+            "BagPartSettings": {
+              "ContainedContentTypes": [
+                "Site"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "MediaWithText",
+          "Name": "ConditiondUtilisation",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Condition d'Utilisation",
+              "Position": "7"
+            }
+          }
+        },
+        {
+          "PartName": "CustomLink",
+          "Name": "TelechargerNotrePlaquette",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Telecharger Notre Plaquette",
+              "Position": "6"
+            }
+          }
+        },
+        {
+          "PartName": "MediaWithText",
+          "Name": "TermsOfUse",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Mentions légales",
+              "Position": "8"
             }
           }
         }
       ]
     },
     {
-      "Name": "ContentMenuItem",
-      "DisplayName": "Content Menu Item",
+      "Name": "Navigation",
+      "DisplayName": "Navigation",
       "Settings": {
         "ContentTypeSettings": {
-          "Stereotype": "MenuItem"
-        },
-        "FullTextAspectSettings": {}
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        }
       },
       "ContentTypePartDefinitionRecords": [
         {
-          "PartName": "ContentMenuItemPart",
-          "Name": "ContentMenuItemPart",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "0"
-            }
-          }
-        },
-        {
-          "PartName": "ContentMenuItem",
-          "Name": "ContentMenuItem",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "1"
-            }
-          }
+          "PartName": "Navigation",
+          "Name": "Navigation",
+          "Settings": {}
         }
       ]
     },
     {
-      "Name": "HtmlMenuItem",
-      "DisplayName": "Html Menu Item",
+      "Name": "Site",
+      "DisplayName": "Site",
       "Settings": {
-        "ContentTypeSettings": {
-          "Stereotype": "MenuItem"
-        },
+        "ContentTypeSettings": {},
         "FullTextAspectSettings": {}
       },
       "ContentTypePartDefinitionRecords": [
         {
-          "PartName": "HtmlMenuItemPart",
-          "Name": "HtmlMenuItemPart",
+          "PartName": "Site",
+          "Name": "Site",
           "Settings": {
             "ContentTypePartSettings": {
               "Position": "0"
-            }
-          }
-        },
-        {
-          "PartName": "HtmlMenuItem",
-          "Name": "HtmlMenuItem",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "Position": "1"
             }
           }
         }
@@ -255,6 +521,7 @@
       "Settings": {
         "ContentPartSettings": {
           "Attachable": true,
+          "Reusable": true,
           "Description": "Provides a Title for your content item.",
           "DefaultPosition": "0"
         }
@@ -276,6 +543,7 @@
       "Settings": {
         "ContentPartSettings": {
           "Attachable": true,
+          "Reusable": true,
           "Description": "Provides a menu link behavior for your content item."
         }
       },
@@ -319,7 +587,276 @@
         }
       },
       "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "logoSiteWeb",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Logo",
+              "Position": "0"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Required": true,
+              "Multiple": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Logo",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Logo of site"
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Logo",
+              "Position": "0"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Required": true,
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Title",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Title",
+              "Position": "2"
+            },
+            "TextFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Url",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Url",
+              "Position": "1"
+            },
+            "TextFieldSettings": {
+              "Required": true
+            },
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "LinkSocial",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "Icon",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Icon",
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Link",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "CustomLink",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Value",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Value",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "LinkField",
+          "Name": "Url",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Url",
+              "Position": "1"
+            },
+            "LinkFieldSettings": {
+              "Required": true,
+              "LinkTextMode": 3
+            },
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "footer",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "LinksLibelle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Libellé des liens",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LibelleSites",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Libellé Sites",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "copyright",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "copyright",
+              "Position": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Site",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Name",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Name",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Adresse",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Adresse",
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CustomLinkMedia",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "Media",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Media",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Url",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Url",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Value",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Value",
+              "Position": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MediaWithText",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "Media",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Media",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Title",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Title",
+              "Position": "1"
+            }
+          }
+        }
+      ]
     }
   ],
-  "Identifier": "4qdpa4d7dxwtctv21h5w73wgcd"
+  "Identifier": "49vy6ejv996cryv7mspfg9nkde"
 }

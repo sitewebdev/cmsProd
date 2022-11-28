@@ -66,7 +66,15 @@
     height: 41px;
   }
 
-.top-footer-right{
+.logo-network a {
+    float: left;
+    display: block;
+    margin: 30px 15px 0px 0px;
+    width: 41px;
+    height: 41px;
+}
+
+.top-footer-right {
     /* height: 100%; */
     width: 70%;
     /* float: right; */
